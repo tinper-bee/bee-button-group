@@ -33,9 +33,6 @@ $color-accent: $palette-pink-A200 !default;
 /* ==========  Card  ========== */
 /* ============ Forms ============*/
 /* BADGE */
-/* Typography */
-/* Shadows */
-/* Animations */
 .u-button-group, .u-button-group-vertical {
   position: relative;
   display: inline-block;

@@ -1,7 +1,9 @@
 # bee-button-group
 [![npm version](https://img.shields.io/npm/v/bee-button-group.svg)](https://www.npmjs.com/package/bee-button-group)
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-button-group/master.svg)](https://travis-ci.org/tinper-bee/bee-button-group)
+
 [![Coverage Status](https://coveralls.io/repos/github/tinper-bee/bee-button-group/badge.svg?branch=master)](https://coveralls.io/github/tinper-bee/bee-button-group?branch=master)
+
 
 
 react bee-button-group component for tinper-bee

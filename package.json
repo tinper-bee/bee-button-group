@@ -26,6 +26,7 @@
     "dev": "bee-tools run start",
     "build": "bee-tools run build",
     "lint": "bee-tools run lint",
+    "coveralls": "bee-tools run coverage",
     "test": "bee-tools run test",
     "chrome": "bee-tools run chrome",
     "browsers": "bee-tools run browsers",

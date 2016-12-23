@@ -10,11 +10,11 @@ class Demo3 extends Component {
     render () {
         return (
             <Row>
-                <Col md={4}>
+                <Col xs={4} xsOffset={4}>
                     <ButtonGroup vertical block>
-                        <Button size="lg" colors="primary">按钮一</Button>
-                        <Button size="lg" colors="primary">按钮二</Button>
-                        <Button size="lg" colors="primary">按钮三</Button>
+                        <Button colors="primary">上</Button>
+                        <Button colors="primary">中</Button>
+                        <Button colors="primary">下</Button>
                     </ButtonGroup>
                 </Col>
             </Row>

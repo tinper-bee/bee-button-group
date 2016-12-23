@@ -9,9 +9,9 @@ class Demo2 extends Component {
     render () {
         return (
             <ButtonGroup vertical>
-                <Button size="lg" colors="primary">按钮一</Button>
-                <Button size="lg" colors="warning">按钮二</Button>
-                <Button size="lg" colors="info">按钮三</Button>
+                <Button colors="primary">上</Button>
+                <Button colors="warning">中</Button>
+                <Button colors="info">下</Button>
             </ButtonGroup>
         )
     }

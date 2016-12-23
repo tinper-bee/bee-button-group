@@ -71,13 +71,12 @@ var ButtonGroup = function (_React$Component) {
   ButtonGroup.prototype.render = function render() {
     var _tbClass;
 
-    var _props = this.props;
-    var block = _props.block;
-    var justified = _props.justified;
-    var vertical = _props.vertical;
-    var classes = _props.classes;
-
-    var others = _objectWithoutProperties(_props, ['block', 'justified', 'vertical', 'classes']);
+    var _props = this.props,
+        block = _props.block,
+        justified = _props.justified,
+        vertical = _props.vertical,
+        classes = _props.classes,
+        others = _objectWithoutProperties(_props, ['block', 'justified', 'vertical', 'classes']);
 
     var tbClass = (_tbClass = {}, _defineProperty(_tbClass, '' + clsPrefix, vertical ? false : true), _defineProperty(_tbClass, clsPrefix + '-block', vertical ? block : false), _defineProperty(_tbClass, clsPrefix + '-vertical', vertical), _defineProperty(_tbClass, clsPrefix + '-justified', justified), _tbClass);
 

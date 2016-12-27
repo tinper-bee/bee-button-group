@@ -1,6 +1,6 @@
 {
   "name": "bee-button-group",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "button-group ui component for react",
   "keywords": [
     "react",
@@ -33,9 +33,9 @@
     "pub": "bee-tools run pub"
   },
   "dependencies": {
-    "bee-button": "^0.1.12",
+    "bee-button": "^0.2.2",
     "classnames": "^2.2.5",
-    "tinper-bee-core": "latest"
+    "tinper-bee-core": "0.0.22"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -9,9 +9,9 @@ class Demo2 extends Component {
     render () {
         return (
             <ButtonGroup vertical>
-                <Button colors="primary">上</Button>
-                <Button colors="warning">中</Button>
-                <Button colors="info">下</Button>
+                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
+                <Button colors="info"><Icon type='uf-file' /></Button>
+                <Button colors="warning"><Icon type='uf-del' /></Button>
             </ButtonGroup>
         )
     }

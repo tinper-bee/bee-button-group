@@ -5,6 +5,7 @@ import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ButtonGroup from '../src';
+import Icon from 'bee-icon';
 
 
 const CARET = <i className="uf uf-chevronarrowdown"></i>;
@@ -22,11 +23,26 @@ const CARETUP = <i className="uf uf-chevronarrowup"></i>;
 class Demo1 extends Component {
     render () {
         return (
-            <ButtonGroup>
-                <Button colors="primary">按钮一</Button>
-                <Button colors="primary">按钮二</Button>
-                <Button colors="primary">按钮三</Button>
+            <div>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button shape='border'><Icon type='uf-navmenu' /></Button>
+                <Button shape='border'><Icon type='uf-file' /></Button>
+                <Button shape='border'><Icon type='uf-pencil' /></Button>
+                <Button shape='border'><Icon type='uf-del' /></Button>
             </ButtonGroup>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button colors="primary">新增</Button>
+                <Button colors="primary">修改</Button>
+                <Button colors="primary">删除</Button>
+            </ButtonGroup>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
+                <Button colors="primary"><Icon type='uf-file' /></Button>
+                <Button colors="primary"><Icon type='uf-pencil' /></Button>
+                <Button colors="primary"><Icon type='uf-del' /></Button>
+            </ButtonGroup>
+            </div>
+
         )
     }
 }
@@ -41,38 +57,14 @@ class Demo2 extends Component {
     render () {
         return (
             <ButtonGroup vertical>
-                <Button colors="primary">上</Button>
-                <Button colors="warning">中</Button>
-                <Button colors="info">下</Button>
+                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
+                <Button colors="info"><Icon type='uf-file' /></Button>
+                <Button colors="warning"><Icon type='uf-del' /></Button>
             </ButtonGroup>
         )
     }
 }
-/**
- *
- * @title 块状按钮组
- * @description 块状按钮组会充满父元素
- *
- */
-
-class Demo3 extends Component {
-
-    render () {
-        return (
-            <Row>
-                <Col xs={4} xsOffset={4}>
-                    <ButtonGroup vertical block>
-                        <Button colors="primary">上</Button>
-                        <Button colors="primary">中</Button>
-                        <Button colors="primary">下</Button>
-                    </ButtonGroup>
-                </Col>
-            </Row>
-
-        )
-    }
-}
-var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮组","code":"/**\r\n *\r\n * @title 默认按钮组\r\n * @description 基础按钮组\r\n *\r\n */\r\n\r\nclass Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <ButtonGroup>\r\n                <Button colors=\"primary\">按钮一</Button>\r\n                <Button colors=\"primary\">按钮二</Button>\r\n                <Button colors=\"primary\">按钮三</Button>\r\n            </ButtonGroup>\r\n        )\r\n    }\r\n}\r\n","desc":" 基础按钮组"},{"example":<Demo2 />,"title":" 垂直排列的按钮组","code":"/**\r\n *\r\n * @title 垂直排列的按钮组\r\n * @description 通过`vertical`属性设置按钮组垂直排列\r\n *\r\n */\r\n\r\nclass Demo2 extends Component {\r\n    render () {\r\n        return (\r\n            <ButtonGroup vertical>\r\n                <Button colors=\"primary\">上</Button>\r\n                <Button colors=\"warning\">中</Button>\r\n                <Button colors=\"info\">下</Button>\r\n            </ButtonGroup>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`vertical`属性设置按钮组垂直排列"},{"example":<Demo3 />,"title":" 块状按钮组","code":"/**\r\n *\r\n * @title 块状按钮组\r\n * @description 块状按钮组会充满父元素\r\n *\r\n */\r\n\r\nclass Demo3 extends Component {\r\n\r\n    render () {\r\n        return (\r\n            <Row>\r\n                <Col xs={4} xsOffset={4}>\r\n                    <ButtonGroup vertical block>\r\n                        <Button colors=\"primary\">上</Button>\r\n                        <Button colors=\"primary\">中</Button>\r\n                        <Button colors=\"primary\">下</Button>\r\n                    </ButtonGroup>\r\n                </Col>\r\n            </Row>\r\n\r\n        )\r\n    }\r\n}\r\n","desc":" 块状按钮组会充满父元素"}]
+var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮组","code":"/**\r\n *\r\n * @title 默认按钮组\r\n * @description 基础按钮组\r\n *\r\n */\r\n\r\nclass Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button shape='border'><Icon type='uf-navmenu' /></Button>\r\n                <Button shape='border'><Icon type='uf-file' /></Button>\r\n                <Button shape='border'><Icon type='uf-pencil' /></Button>\r\n                <Button shape='border'><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button colors=\"primary\">新增</Button>\r\n                <Button colors=\"primary\">修改</Button>\r\n                <Button colors=\"primary\">删除</Button>\r\n            </ButtonGroup>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-file' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-pencil' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n            </div>\r\n\r\n        )\r\n    }\r\n}\r\n","desc":" 基础按钮组"},{"example":<Demo2 />,"title":" 垂直排列的按钮组","code":"/**\r\n *\r\n * @title 垂直排列的按钮组\r\n * @description 通过`vertical`属性设置按钮组垂直排列\r\n *\r\n */\r\n\r\nclass Demo2 extends Component {\r\n    render () {\r\n        return (\r\n            <ButtonGroup vertical>\r\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\r\n                <Button colors=\"info\"><Icon type='uf-file' /></Button>\r\n                <Button colors=\"warning\"><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`vertical`属性设置按钮组垂直排列"}]
 
 
 class Demo extends Component {
@@ -99,7 +91,7 @@ class Demo extends Component {
             </Button>
         );
 
-        
+
         return (
             <Col md={12}>
                 <h3>{ title }</h3>

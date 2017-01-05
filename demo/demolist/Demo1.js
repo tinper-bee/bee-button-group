@@ -8,11 +8,26 @@
 class Demo1 extends Component {
     render () {
         return (
-            <ButtonGroup>
-                <Button colors="primary">按钮一</Button>
-                <Button colors="primary">按钮二</Button>
-                <Button colors="primary">按钮三</Button>
+            <div>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button shape='border'><Icon type='uf-navmenu' /></Button>
+                <Button shape='border'><Icon type='uf-file' /></Button>
+                <Button shape='border'><Icon type='uf-pencil' /></Button>
+                <Button shape='border'><Icon type='uf-del' /></Button>
             </ButtonGroup>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button colors="primary">新增</Button>
+                <Button colors="primary">修改</Button>
+                <Button colors="primary">删除</Button>
+            </ButtonGroup>
+            <ButtonGroup style={{ margin: 10 }}>
+                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
+                <Button colors="primary"><Icon type='uf-file' /></Button>
+                <Button colors="primary"><Icon type='uf-pencil' /></Button>
+                <Button colors="primary"><Icon type='uf-del' /></Button>
+            </ButtonGroup>
+            </div>
+
         )
     }
 }

@@ -35,6 +35,9 @@
   display: inline-block;
   vertical-align: middle; }
 
+.u-button-group .u-button {
+  min-width: 2.5rem; }
+
 .u-button-group > .u-button:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }

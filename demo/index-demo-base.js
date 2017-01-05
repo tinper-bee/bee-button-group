@@ -5,6 +5,7 @@ import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ButtonGroup from '../src';
+import Icon from 'bee-icon';
 
 
 const CARET = <i className="uf uf-chevronarrowdown"></i>;
@@ -38,7 +39,7 @@ class Demo extends Component {
             </Button>
         );
 
-        
+
         return (
             <Col md={12}>
                 <h3>{ title }</h3>

@@ -2969,7 +2969,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 .uf-pass-3:before {
   content: "\e649"; }
 
-.uf-treeline:before {
+.uf-treearrow-down:before {
   content: "\e608"; }
 
 .uf-training:before {
@@ -3110,7 +3110,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 .uf-listsearch:before {
   content: "\e67c"; }
 
-.uf-mi:before {
+.uf-gridcaretarrowup:before {
   content: "\e636"; }
 
 .uf-eye-c-o:before {
@@ -3190,6 +3190,9 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 
 .uf-2arrow-up:before {
   content: "\e607"; }
+
+.uf-notification:before {
+  content: "\e9cc"; }
 
 .uf-piechart:before {
   content: "\e6f0"; }
@@ -3275,7 +3278,7 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 .uf-bullseye:before {
   content: "\e632"; }
 
-.uf-camera-2:before {
+.uf-gridcaretdown:before {
   content: "\e637"; }
 
 .uf-triangle-up:before {
@@ -3776,6 +3779,9 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 .uf-exc-c:before {
   content: "\e61d"; }
 
+.uf-code:before {
+  content: "\e656"; }
+
 .uf-plug-o:before {
   content: "\e60d"; }
 
@@ -3784,6 +3790,12 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
 
 .uf-treeadd:before {
   content: "\e992"; }
+
+.uf-mi:before {
+  content: "\e993"; }
+
+.uf-treeline-copy:before {
+  content: "\e994"; }
 
 /*  IMAGES  */
 /* 默认颜色 */
@@ -5839,6 +5851,9 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   position: relative;
   display: inline-block;
   vertical-align: middle; }
+
+.u-button-group .u-button {
+  min-width: 2.5rem; }
 
 .u-button-group > .u-button:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;

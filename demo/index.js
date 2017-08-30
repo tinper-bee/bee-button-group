@@ -4,8 +4,6 @@ import { Panel } from 'bee-panel';
 import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ButtonGroup from '../src';
-import Icon from 'bee-icon';
 
 
 const CARET = <i className="uf uf-arrow-down"></i>;
@@ -13,58 +11,7 @@ const CARET = <i className="uf uf-arrow-down"></i>;
 const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
-/**
- *
- * @title 默认按钮组
- * @description 基础按钮组
- *
- */
-
-class Demo1 extends Component {
-    render () {
-        return (
-            <div>
-            <ButtonGroup style={{ margin: 10 }}>
-                <Button shape='border'><Icon type='uf-navmenu' /></Button>
-                <Button shape='border'><Icon type='uf-file' /></Button>
-                <Button shape='border'><Icon type='uf-pencil' /></Button>
-                <Button shape='border'><Icon type='uf-del' /></Button>
-            </ButtonGroup>
-            <ButtonGroup style={{ margin: 10 }}>
-                <Button colors="primary">新增</Button>
-                <Button colors="primary">修改</Button>
-                <Button colors="primary">删除</Button>
-            </ButtonGroup>
-            <ButtonGroup style={{ margin: 10 }}>
-                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
-                <Button colors="primary"><Icon type='uf-file' /></Button>
-                <Button colors="primary"><Icon type='uf-pencil' /></Button>
-                <Button colors="primary"><Icon type='uf-del' /></Button>
-            </ButtonGroup>
-            </div>
-
-        )
-    }
-}
-/**
- *
- * @title 垂直排列的按钮组
- * @description 通过`vertical`属性设置按钮组垂直排列
- *
- */
-
-class Demo2 extends Component {
-    render () {
-        return (
-            <ButtonGroup vertical>
-                <Button colors="primary"><Icon type='uf-navmenu' /></Button>
-                <Button colors="info"><Icon type='uf-file' /></Button>
-                <Button colors="warning"><Icon type='uf-del' /></Button>
-            </ButtonGroup>
-        )
-    }
-}
-var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮组","code":"/**\r\n *\r\n * @title 默认按钮组\r\n * @description 基础按钮组\r\n *\r\n */\r\n\r\nclass Demo1 extends Component {\r\n    render () {\r\n        return (\r\n            <div>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button shape='border'><Icon type='uf-navmenu' /></Button>\r\n                <Button shape='border'><Icon type='uf-file' /></Button>\r\n                <Button shape='border'><Icon type='uf-pencil' /></Button>\r\n                <Button shape='border'><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button colors=\"primary\">新增</Button>\r\n                <Button colors=\"primary\">修改</Button>\r\n                <Button colors=\"primary\">删除</Button>\r\n            </ButtonGroup>\r\n            <ButtonGroup style={{ margin: 10 }}>\r\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-file' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-pencil' /></Button>\r\n                <Button colors=\"primary\"><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n            </div>\r\n\r\n        )\r\n    }\r\n}\r\n","desc":" 基础按钮组"},{"example":<Demo2 />,"title":" 垂直排列的按钮组","code":"/**\r\n *\r\n * @title 垂直排列的按钮组\r\n * @description 通过`vertical`属性设置按钮组垂直排列\r\n *\r\n */\r\n\r\nclass Demo2 extends Component {\r\n    render () {\r\n        return (\r\n            <ButtonGroup vertical>\r\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\r\n                <Button colors=\"info\"><Icon type='uf-file' /></Button>\r\n                <Button colors=\"warning\"><Icon type='uf-del' /></Button>\r\n            </ButtonGroup>\r\n        )\r\n    }\r\n}\r\n","desc":" 通过`vertical`属性设置按钮组垂直排列"}]
+var Demo1 = require("./demolist/Demo1");var Demo2 = require("./demolist/Demo2");var DemoArray = [{"example":<Demo1 />,"title":" 默认按钮组","code":"/**\n *\n * @title 默认按钮组\n * @description 基础按钮组\n *\n */\n\nimport React, { Component } from 'react';\nimport ButtonGroup from 'tinper-bee';\nimport Button from 'bee-button';\nimport Icon from 'bee-icon';\n\nclass Demo1 extends Component {\n    render () {\n        return (\n            <div>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button shape='border'><Icon type='uf-navmenu' /></Button>\n                <Button shape='border'><Icon type='uf-file' /></Button>\n                <Button shape='border'><Icon type='uf-pencil' /></Button>\n                <Button shape='border'><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\">新增</Button>\n                <Button colors=\"primary\">修改</Button>\n                <Button colors=\"primary\">删除</Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-file' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-pencil' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            </div>\n\n        )\n    }\n}\n\n\n","desc":" 基础按钮组"},{"example":<Demo2 />,"title":" 垂直排列的按钮组","code":"/**\n *\n * @title 垂直排列的按钮组\n * @description 通过`vertical`属性设置按钮组垂直排列\n *\n */\n\nimport React, { Component } from 'react';\nimport ButtonGroup from 'tinper-bee';\nimport Button from 'bee-button';\nimport Icon from 'bee-icon';\n\nclass Demo2 extends Component {\n    render () {\n        return (\n            <ButtonGroup vertical>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"info\"><Icon type='uf-file' /></Button>\n                <Button colors=\"warning\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n        )\n    }\n}\n\n\n\n","desc":" 通过`vertical`属性设置按钮组垂直排列"}]
 
 
 class Demo extends Component {

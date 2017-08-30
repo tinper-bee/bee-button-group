@@ -5,6 +5,11 @@
  *
  */
 
+import React, { Component } from 'react';
+import ButtonGroup from '../../src';
+import Button from 'bee-button';
+import Icon from 'bee-icon';
+
 class Demo2 extends Component {
     render () {
         return (
@@ -16,3 +21,6 @@ class Demo2 extends Component {
         )
     }
 }
+
+
+export default Demo2;

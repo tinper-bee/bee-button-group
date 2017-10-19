@@ -2,22 +2,22 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import classNames from 'classnames';
 // import Button from 'bee-button';
-
+import PropTypes from 'prop-types';
 
 const propTypes = {
   /**
    * 是否垂直排列
   */
-  vertical: React.PropTypes.bool,
+  vertical: PropTypes.bool,
   /**
    * 是否对齐
    */
-  justified: React.PropTypes.bool,
+  justified: PropTypes.bool,
 
   /**
    * 垂直时是否为块状元素
    */
-  block: React.PropTypes.bool
+  block: PropTypes.bool
 };
 
 const defaultProps = {

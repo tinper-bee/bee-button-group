@@ -33,17 +33,17 @@
     "pub": "bee-tools run pub"
   },
   "dependencies": {
-    "classnames": "^2.2.5",
     "babel-runtime": "^6.23.0",
-    "tinper-bee-core": "latest"
+    "bee-button": "^1.0.6",
+    "classnames": "^2.2.5",
+    "tinper-bee-core": "^0.4.1"
   },
   "peerDependencies": {
     "react": "^15.3.0 || ^16.0",
     "react-dom": "^15.3.0 || ^16.0",
     "prop-types": "15.6.0"
-   },
+  },
   "devDependencies": {
-    "bee-button": "latest",
     "bee-icon": "latest",
     "bee-layout": "latest",
     "bee-panel": "latest",

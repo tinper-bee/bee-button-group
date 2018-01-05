@@ -17,6 +17,9 @@ const propTypes = {
      * 垂直时是否为块状元素
      */
     block: PropTypes.bool,
+    /**
+     * 传入数组替代button
+     */
     list: PropTypes.array
 };
 
@@ -61,7 +64,6 @@ class ButtonGroup extends React.Component {
                 </div>
             );
         }
-        console.log(list);
 
         return (
             <div

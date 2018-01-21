@@ -76,7 +76,7 @@
 	
 	var CARETUP = _react2['default'].createElement('i', { className: 'uf uf-arrow-up' });
 	
-	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(69);var Demo3 = __webpack_require__(70);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮组", "code": "/**\n *\n * @title 默认按钮组\n * @description 基础按钮组\n *\n */\n\nimport React, { Component } from 'react';\nimport ButtonGroup from 'bee-button-group';\nimport Button from 'bee-button';\nimport Icon from 'bee-icon';\n\nclass Demo1 extends Component {\n    render () {\n        return (\n            <div>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button shape='border'><Icon type='uf-navmenu' /></Button>\n                <Button shape='border'><Icon type='uf-file' /></Button>\n                <Button shape='border'><Icon type='uf-pencil' /></Button>\n                <Button shape='border'><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\">新增</Button>\n                <Button colors=\"primary\">修改</Button>\n                <Button colors=\"primary\">删除</Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-file' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-pencil' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            </div>\n\n        )\n    }\n}\n\n\n", "desc": " 基础按钮组" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 垂直排列的按钮组", "code": "/**\n *\n * @title 垂直排列的按钮组\n * @description 通过`vertical`属性设置按钮组垂直排列\n *\n */\n\nimport React, { Component } from 'react';\nimport ButtonGroup from 'bee-button-group';\nimport Button from 'bee-button';\nimport Icon from 'bee-icon';\n\nclass Demo2 extends Component {\n    render () {\n        return (\n            <ButtonGroup vertical>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"info\"><Icon type='uf-file' /></Button>\n                <Button colors=\"warning\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n        )\n    }\n}\n\n\n\n", "desc": " 通过`vertical`属性设置按钮组垂直排列" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 传入列表渲染按钮组", "code": "/**\r\n *\r\n * @title 传入列表渲染按钮组\r\n * @description 通过`list`属性传入按钮组信息, 并且按钮具有选中样式,信息为Button组件可接受的props\r\n *\r\n */\r\n\r\nimport React, { Component } from 'react';\r\nimport ButtonGroup from 'bee-button-group';\r\n\r\nconst LIST = [\r\n    {\r\n        title: '未读信息',\r\n        colors: 'primary',\r\n        key: 'notRead'\r\n    },\r\n    {\r\n        title: '已读信息',\r\n        colors: 'primary',\r\n        key: 'readed'\r\n    },\r\n    {\r\n        title: '已发送信息',\r\n        colors: 'primary',\r\n        key: 'write'\r\n    },\r\n]\r\n\r\nclass Demo3 extends Component {\r\n    render () {\r\n        return (\r\n            <ButtonGroup list={ LIST } />\r\n        )\r\n    }\r\n}\r\n\r\n\r\n", "desc": " 通过`list`属性传入按钮组信息, 并且按钮具有选中样式,信息为Button组件可接受的props" }];
+	var Demo1 = __webpack_require__(64);var Demo2 = __webpack_require__(69);var Demo3 = __webpack_require__(70);var DemoArray = [{ "example": _react2['default'].createElement(Demo1, null), "title": " 默认按钮组", "code": "/**\n *\n * @title 默认按钮组\n * @description 基础按钮组\n *\n */\n\nimport React, { Component } from 'react';\nimport { ButtonGroup, Icon, Button } from 'tinper-bee';\n\nclass Demo1 extends Component {\n    render () {\n        return (\n            <div>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button shape='border'><Icon type='uf-navmenu' /></Button>\n                <Button shape='border'><Icon type='uf-file' /></Button>\n                <Button shape='border'><Icon type='uf-pencil' /></Button>\n                <Button shape='border'><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\">新增</Button>\n                <Button colors=\"primary\">修改</Button>\n                <Button colors=\"primary\">删除</Button>\n            </ButtonGroup>\n            <ButtonGroup style={{ margin: 10 }}>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-file' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-pencil' /></Button>\n                <Button colors=\"primary\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n            </div>\n\n        )\n    }\n}\n\n\n", "desc": " 基础按钮组" }, { "example": _react2['default'].createElement(Demo2, null), "title": " 垂直排列的按钮组", "code": "/**\n *\n * @title 垂直排列的按钮组\n * @description 通过`vertical`属性设置按钮组垂直排列\n *\n */\n\nimport React, { Component } from 'react';\nimport { ButtonGroup, Icon, Button } from 'tinper-bee';\n\nclass Demo2 extends Component {\n    render () {\n        return (\n            <ButtonGroup vertical>\n                <Button colors=\"primary\"><Icon type='uf-navmenu' /></Button>\n                <Button colors=\"info\"><Icon type='uf-file' /></Button>\n                <Button colors=\"warning\"><Icon type='uf-del' /></Button>\n            </ButtonGroup>\n        )\n    }\n}\n\n\n\n", "desc": " 通过`vertical`属性设置按钮组垂直排列" }, { "example": _react2['default'].createElement(Demo3, null), "title": " 传入列表渲染按钮组", "code": "/**\n *\n * @title 传入列表渲染按钮组\n * @description 通过`list`属性传入按钮组信息, 并且按钮具有选中样式,信息为Button组件可接受的props\n *\n */\n\nimport React, { Component } from 'react';\nimport { ButtonGroup } from 'tinper-bee';\n\nconst LIST = [\n    {\n        title: '未读信息',\n        colors: 'primary',\n        key: 'notRead'\n    },\n    {\n        title: '已读信息',\n        colors: 'primary',\n        key: 'readed'\n    },\n    {\n        title: '已发送信息',\n        colors: 'primary',\n        key: 'write'\n    },\n]\n\nclass Demo3 extends Component {\n    render () {\n        return (\n            <ButtonGroup list={ LIST } />\n        )\n    }\n}\n\n\n", "desc": " 通过`list`属性传入按钮组信息, 并且按钮具有选中样式,信息为Button组件可接受的props" }];
 	
 	var Demo = function (_Component) {
 	    _inherits(Demo, _Component);
@@ -102,18 +102,23 @@
 	            title = _props.title,
 	            example = _props.example,
 	            code = _props.code,
-	            desc = _props.desc;
+	            desc = _props.desc,
+	            scss_code = _props.scss_code;
 	
 	        var caret = this.state.open ? CARETUP : CARET;
 	        var text = this.state.open ? "隐藏代码" : "查看代码";
 	
-	        var footer = _react2['default'].createElement(
-	            _beeButton2['default'],
-	            { shape: 'block', onClick: this.handleClick },
-	            caret,
-	            text
+	        var header = _react2['default'].createElement(
+	            'div',
+	            null,
+	            example,
+	            _react2['default'].createElement(
+	                _beeButton2['default'],
+	                { style: { "marginTop": "10px" }, shape: 'block', onClick: this.handleClick },
+	                caret,
+	                text
+	            )
 	        );
-	
 	        return _react2['default'].createElement(
 	            _beeLayout.Col,
 	            { md: 12 },
@@ -129,7 +134,7 @@
 	            ),
 	            _react2['default'].createElement(
 	                _beePanel.Panel,
-	                { collapsible: true, headerContent: true, expanded: this.state.open, colors: 'bordered', header: example, footer: footer, footerStyle: { padding: 0, borderColor: "transparent" } },
+	                { collapsible: true, headerContent: true, expanded: this.state.open, colors: 'bordered', header: header, footerStyle: { padding: 0 } },
 	                _react2['default'].createElement(
 	                    'pre',
 	                    null,
@@ -138,7 +143,16 @@
 	                        { className: 'hljs javascript' },
 	                        code
 	                    )
-	                )
+	                ),
+	                !!scss_code ? _react2['default'].createElement(
+	                    'pre',
+	                    null,
+	                    _react2['default'].createElement(
+	                        'code',
+	                        { className: 'hljs css' },
+	                        scss_code
+	                    )
+	                ) : null
 	            )
 	        );
 	    };
@@ -161,7 +175,7 @@
 	            null,
 	            DemoArray.map(function (child, index) {
 	
-	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, desc: child.desc, key: index });
+	                return _react2['default'].createElement(Demo, { example: child.example, title: child.title, code: child.code, scss_code: child.scss_code, desc: child.desc, key: index });
 	            })
 	        );
 	    };
@@ -4583,12 +4597,18 @@
 	      elFuturePos = (0, _getElFuturePos2['default'])(elRegion, refNodeRegion, points, offset, targetOffset);
 	      _utils2['default'].mix(newElRegion, elFuturePos);
 	    }
-	
-	    // 检查反下后的位置是否可以放下了
-	    // 如果仍然放不下只有指定了可以调整当前方向才调整
-	    newOverflowCfg.adjustX = overflow.adjustX && isFailX(elFuturePos, elRegion, visibleRect);
-	
-	    newOverflowCfg.adjustY = overflow.adjustY && isFailY(elFuturePos, elRegion, visibleRect);
+	    var isStillFailX = isFailX(elFuturePos, elRegion, visibleRect);
+	    var isStillFailY = isFailY(elFuturePos, elRegion, visibleRect);
+	    // 检查反下后的位置是否可以放下了，如果仍然放不下：
+	    // 1. 复原修改过的定位参数
+	    if (isStillFailX || isStillFailY) {
+	      points = align.points;
+	      offset = align.offset || [0, 0];
+	      targetOffset = align.targetOffset || [0, 0];
+	    }
+	    // 2. 只有指定了可以调整当前方向才调整
+	    newOverflowCfg.adjustX = overflow.adjustX && isStillFailX;
+	    newOverflowCfg.adjustY = overflow.adjustY && isStillFailY;
 	
 	    // 确实要调整，甚至可能会调整高度宽度
 	    if (newOverflowCfg.adjustX || newOverflowCfg.adjustY) {
@@ -4659,8 +4679,12 @@
 	
 	var getComputedStyleX = void 0;
 	
-	function force(x, y) {
-	  return x + y;
+	// https://stackoverflow.com/a/3485654/3040605
+	function forceRelayout(elem) {
+	  var originalStyle = elem.style.display;
+	  elem.style.display = 'none';
+	  elem.offsetHeight; // eslint-disable-line
+	  elem.style.display = originalStyle;
 	}
 	
 	function css(el, name, v) {
@@ -4895,6 +4919,8 @@
 	    elem.style[oppositeVerticalProperty] = '';
 	    elem.style[verticalProperty] = presetV + 'px';
 	  }
+	  // force relayout
+	  forceRelayout(elem);
 	  var old = getOffset(elem);
 	  var originalStyle = {};
 	  for (var key in offset) {
@@ -4911,7 +4937,7 @@
 	  }
 	  css(elem, originalStyle);
 	  // force relayout
-	  force(elem.offsetTop, elem.offsetLeft);
+	  forceRelayout(elem);
 	  if ('left' in offset || 'top' in offset) {
 	    (0, _propertyUtils.setTransitionProperty)(elem, originalTransition);
 	  }
@@ -6373,6 +6399,9 @@
 	     * 垂直时是否为块状元素
 	     */
 	    block: _propTypes2['default'].bool,
+	    /**
+	     * 传入数组替代button
+	     */
 	    list: _propTypes2['default'].array
 	};
 	
@@ -6430,7 +6459,6 @@
 	                this.props.children
 	            );
 	        }
-	        console.log(list);
 	
 	        return _react2['default'].createElement(
 	            'div',

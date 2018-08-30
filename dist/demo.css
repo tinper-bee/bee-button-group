@@ -5,6 +5,7 @@
 /*  Navlayout  */
 @import url(../node_modules/bee-layout/build/Layout.css);
 @import url(../node_modules/bee-panel/build/Panel.css);
+@import url(../node_modules/bee-message/build/Message.css);
 .red {
   color: rgb(244,67,54) !important; }
 

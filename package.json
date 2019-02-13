@@ -37,9 +37,9 @@
  },
  "dependencies": {
   "babel-runtime": "^6.23.0",
-  "bee-button": "^1.0.6",
+  "bee-button": "^2.0.0",
   "classnames": "^2.2.5",
-  "tinper-bee-core": "^0.4.1"
+  "tinper-bee-core": "latest"
  },
  "peerDependencies": {
   "react": "^15.3.0 || ^16.0",

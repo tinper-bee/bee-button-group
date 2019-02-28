@@ -79,6 +79,6 @@
 .u-button-group-vertical>.u-button:last-child:not(:first-child) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
 }

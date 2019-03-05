@@ -1,14 +1,17 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 
-
-
 .u-button-group, .u-button-group-vertical {
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
-.u-button-group .u-button {
-    min-width: 25px;
+.u-button-group {
+    .u-button{
+        min-width: 25px;
+        .uf{
+            font-size: 14px;
+        }
+    }
 }
 
 .u-button-group>.u-button:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -23,6 +26,9 @@
     border-top-left-radius: 0;
 }
 .u-button-group .u-button+.u-button, .u-button-group .u-button+.u-button-group, .u-button-group .u-button-group+.u-button, .u-button-group .u-button-group+.v-group {
+    margin-left: 1px;
+}
+.u-button-group .u-button-border+.u-button-border, .u-button-group .u-button-border+.u-button-group, .u-button-group .u-button-group+.u-button-border, .u-button-group .u-button-group+.v-group {
     margin-left: -1px;
 }
 .u-button-group>.u-button:first-child {

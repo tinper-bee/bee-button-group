@@ -1,5 +1,10 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/tinper-bee/bee-button-group/compare/v1.2.0...v2.0.1) (2019-03-05)
+
+
+
 <a name="1.2.0"></a>
-# 1.2.0 (2019-02-16)
+# [1.2.0](https://github.com/tinper-bee/bee-button-group/compare/7b9ed74...v1.2.0) (2019-02-16)
 
 
 ### Bug Fixes
